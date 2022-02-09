@@ -22,7 +22,6 @@ const CreateUserFormSchema = yup.object().shape({
         null, yup.ref('password')
     ], 'As senhas precisam ser iguais')
   })
-  
 
 export default function CreateUser(){
     const { register, handleSubmit, formState } = useForm({
